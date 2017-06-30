@@ -3,7 +3,7 @@ Dokuwiki to Latex converter
 
 
 # How to install ANTLR4
-From "The Definitive ANTLR 4 Reference" by Terence Parr:
+From "The Definitive ANTLR 4 Reference" by Terence Parr (https://pragprog.com/book/tpantlr2/the-definitive-antlr-4-reference):
 
 Step 1.
 	Download antlr4 jar from www.antlr.org
@@ -41,11 +41,14 @@ You can use the Makefile already created or:
 	make build
 
 	# or
-	# obtain java files associated with grammar
+	# obtain java files associated with grammars
 	java -jar /usr/local/lib/antlr-4.6-complete.jar DokuWikiGrammar.g4
+	java -jar /usr/local/lib/antlr-4.6-complete.jar DokuWikiLinksGrammar.g4
+	java -jar /usr/local/lib/antlr-4.6-complete.jar DokuWikiListGrammar.g4
+	java -jar /usr/local/lib/antlr-4.6-complete.jar DokuWikiTablesGrammar.g4
 
 	# compile java files with Doku2Latex.java and Doku2LatexListener.java
-	java Doku2Latex*.java DokuWikiGrammar*.java
+	javac Doku2Latex*.java DokuWikiGrammar*.java SpecialChars.java Utils.java DokuWikiLink*.java DokuWikiList*.java DokuWikiTables*.java
 
 # How to run Doku2Latex Parser
 	java Doku2Latex <file_name>
