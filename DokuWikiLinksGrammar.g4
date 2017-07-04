@@ -35,7 +35,7 @@ fragment FRAGM : [a-zA-Z] [a-zA-Z0-9._-]*;
 
 URL1 : SCHEME '://' (USER (':' PASSWORD)? '@')? HOST (':' PORT)? ( '?' QUERY)? ('#' FRAGM)? ;
 
-PAGENAME : [a-zA-Z0-9] [a-zA-Z0-9._/-]* ('#' FRAGM)? ;
+PAGENAME : [a-zA-Z0-9] [a-zA-Z0-9._/-:]* ('#' FRAGM)? ;
 
 //TEXT : [a-zA-Z0-9 \n\t\\_.!@#$%^&*()+={};':"|<>,?/-]+ ;
 TEXT : . ;

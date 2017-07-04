@@ -22,7 +22,7 @@ public class Utils {
 			s = s.substring(index + 1, s.length() - 1);
 		index = s.lastIndexOf('<');
 		if (index > 0)
-			s = s.substring(0, index - 1);
+			s = s.substring(0, index);
 		return s;
 	}
 
