@@ -28,7 +28,8 @@ public class Doku2LatexListener extends DokuWikiGrammarBaseListener {
 	public void enterWiki_start(DokuWikiGrammarParser.Wiki_startContext ctx) {
 	//	System.out.println("enter wiki start");
 	//	System.out.println(ctx);
-		System.out.println("\\documentclass {article}");
+		System.out.println("\\documentclass[a4paper]{article}");
+		System.out.println("\\usepackage[a4paper]{geometry}");
 		System.out.println("\\usepackage{amsmath}");
 		System.out.println("\\usepackage{ulem}");
 		System.out.println("\\usepackage{hyperref}");
