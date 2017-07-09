@@ -53,7 +53,6 @@ public class Doku2LatexListener extends DokuWikiGrammarBaseListener {
 	//	System.out.println(ctx);
 	//	System.out.print("<h2>");
 		System.out.println();
-		System.out.println();
 
 		try {
 			String headline_start = ctx.HEADLINE().get(0).toString();
@@ -96,8 +95,7 @@ public class Doku2LatexListener extends DokuWikiGrammarBaseListener {
 	//	System.out.println("Exit headline");
 	//	System.out.println(ctx);
 	//	System.out.print("<\\h2>");
-		System.out.println("}");
-		System.out.println();
+		System.out.println("}\\\\");
 
 	}
 	
