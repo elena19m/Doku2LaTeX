@@ -30,6 +30,7 @@ public class Doku2LatexListener extends DokuWikiGrammarBaseListener {
 	//	System.out.println(ctx);
 		System.out.println("\\documentclass[a4paper]{article}");
 		System.out.println("\\usepackage[a4paper]{geometry}");
+		System.out.println("\\usepackage[utf8x]{inputenc}");
 		System.out.println("\\usepackage{amsmath}");
 		System.out.println("\\usepackage{ulem}");
 		System.out.println("\\usepackage{hyperref}");

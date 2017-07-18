@@ -12,6 +12,7 @@ public class SpecialChars {
 	public static final String regex_keys;
 	static {
 		chars = new HashMap<String , String>();
+/* Use usepackage[utf8x]{inputenc} instead of this:
 		chars.put("ă", "\\\\u{a}");
 		chars.put("Ă", "\\\\u{A}");
 		chars.put("â", "\\\\^{a}");
@@ -24,6 +25,7 @@ public class SpecialChars {
 		chars.put("ţ", "\\\\c{t}");
 		chars.put("ț", "\\\\c{t}");
 		chars.put("Ţ", "\\\\c{T}");
+*/
 		chars.put("–", "-");
 		regex_keys = "[" + chars.keySet().toString().replaceAll("[\\]\\[, ]", "") + "]";
 	}
