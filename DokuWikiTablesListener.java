@@ -324,23 +324,23 @@ public class DokuWikiTablesListener extends DokuWikiTablesGrammarBaseListener {
 		rowList.set(colIndex, elem);
 	}
 	
-	@Override
-	public void enterTable_latexs(DokuWikiTablesGrammarParser.Table_latexsContext ctx) {
-		String s = ctx.LATEX_TOKEN_S().toString();
-		ArrayList<String> rowList = matrix.get(rowIndex);
-		String elem = rowList.get(colIndex);
-		elem += s;
-		rowList.set(colIndex, elem);
-	}
-	
-	@Override
-	public void enterTable_latexss(DokuWikiTablesGrammarParser.Table_latexssContext ctx) {
-		String s = ctx.LATEX_TOKEN_SS().toString();
-		ArrayList<String> rowList = matrix.get(rowIndex);
-		String elem = rowList.get(colIndex);
-		elem += s.substring(1, s.length() - 1);
-		rowList.set(colIndex, elem);
-	}
+//	@Override
+//	public void enterTable_latexs(DokuWikiTablesGrammarParser.Table_latexsContext ctx) {
+//		String s = ctx.LATEX_TOKEN_S().toString();
+//		ArrayList<String> rowList = matrix.get(rowIndex);
+//		String elem = rowList.get(colIndex);
+//		elem += s;
+//		rowList.set(colIndex, elem);
+//	}
+//	
+//	@Override
+//	public void enterTable_latexss(DokuWikiTablesGrammarParser.Table_latexssContext ctx) {
+//		String s = ctx.LATEX_TOKEN_SS().toString();
+//		ArrayList<String> rowList = matrix.get(rowIndex);
+//		String elem = rowList.get(colIndex);
+//		elem += s.substring(1, s.length() - 1);
+//		rowList.set(colIndex, elem);
+//	}
 	
 	@Override
 	public void enterTable_latextag(DokuWikiTablesGrammarParser.Table_latextagContext ctx) {

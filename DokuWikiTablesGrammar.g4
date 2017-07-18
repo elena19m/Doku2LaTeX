@@ -25,8 +25,8 @@ cell_formatted_text : combined				# table_combined
 			| NOWIKI_TOKEN2			# table_nowiki2
 			| CODE_TOKEN1			# table_code
 			| FILE_TOKEN			# table_file
-			| LATEX_TOKEN_S			# table_latexs
-			| LATEX_TOKEN_SS		# table_latexss
+//			| LATEX_TOKEN_S			# table_latexs
+//			| LATEX_TOKEN_SS		# table_latexss
 			| LATEX_TOKEN_TAG		# table_latextag
 			| LATEX_TOKEN_DISPLAYMATH	# table_latex_displaymath
 			| LATEX_TOKEN_EQNARRAY		# table_latex_eqnarray
@@ -158,8 +158,8 @@ fragment END_MATH : '\\end{' SPACES*? 'math' SPACES*? '}';
 
 
 
-LATEX_TOKEN_S			: '$' .*? '$' ;
-LATEX_TOKEN_SS			: '$$' .*? '$$' ;
+//LATEX_TOKEN_S			: '$' .*? '$' ;
+//LATEX_TOKEN_SS			: '$$' .*? '$$' ;
 LATEX_TOKEN_TAG			: '<latex>' .*? '</latex>' ;
 LATEX_TOKEN_DISPLAYMATH		: START_DISPLAYMATH .*? END_DISPLAYMATH ;
 LATEX_TOKEN_EQNARRAY		: START_EQNARRAY .*? END_EQNARRAY ;

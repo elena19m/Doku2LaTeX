@@ -322,23 +322,23 @@ public class Doku2LatexListener extends DokuWikiGrammarBaseListener {
 		System.out.println("\\end{verbatim}");
 	}
 
-	@Override
-	public void enterLatexs(DokuWikiGrammarParser.LatexsContext ctx) {
-		/*
-		 * $ eq $
-		 */
-		String s = ctx.LATEX_TOKEN_S().toString();
-		System.out.println(s);
-	}
-	
-	@Override 
-	public void enterLatexss(DokuWikiGrammarParser.LatexssContext ctx) {
-		/*
-		 * $$ eq $$
-		 */
-		String s = ctx.LATEX_TOKEN_SS().toString();
-		System.out.println(s);
-	}
+//	@Override
+//	public void enterLatexs(DokuWikiGrammarParser.LatexsContext ctx) {
+//		/*
+//		 * $ eq $
+//		 */
+//		String s = ctx.LATEX_TOKEN_S().toString();
+//		System.out.println(s);
+//	}
+//	
+//	@Override 
+//	public void enterLatexss(DokuWikiGrammarParser.LatexssContext ctx) {
+//		/*
+//		 * $$ eq $$
+//		 */
+//		String s = ctx.LATEX_TOKEN_SS().toString();
+//		System.out.println(s);
+//	}
 	
 	@Override 
 	public void enterLatextag(DokuWikiGrammarParser.LatextagContext ctx) {

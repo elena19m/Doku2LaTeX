@@ -34,8 +34,8 @@ formatted_text :  HEADLINE raw_text+ HEADLINE				# headline
 		| NOTE_START formatted_text+? NOTE_END			# note
 		| CODE_TOKEN1						# code
 		| FILE_TOKEN						# file
-		| LATEX_TOKEN_S						# latexs
-		| LATEX_TOKEN_SS					# latexss
+//		| LATEX_TOKEN_S						# latexs
+//		| LATEX_TOKEN_SS					# latexss
 		| LATEX_TOKEN_TAG					# latextag
 		| LATEX_TOKEN_DISPLAYMATH				# latex_displaymath
 		| LATEX_TOKEN_EQNARRAY					# latex_eqnarray
@@ -181,8 +181,8 @@ fragment END_MULTILINE_STAR : '\\end{' SPACES*? 'multline*' SPACES*? '}';
 fragment START_MATH : '\\begin{' SPACES*? 'math' SPACES*? '}' ;
 fragment END_MATH : '\\end{' SPACES*? 'math' SPACES*? '}';
 
-LATEX_TOKEN_S			: '$' .*? '$' ;
-LATEX_TOKEN_SS			: '$$' .*? '$$' ;
+//LATEX_TOKEN_S			: '$' .*? '$' ;
+//LATEX_TOKEN_SS			: '$$' .*? '$$' ;
 LATEX_TOKEN_TAG			: '<latex>' .*? '</latex>' ;
 LATEX_TOKEN_DISPLAYMATH		: START_DISPLAYMATH .*? END_DISPLAYMATH ;
 LATEX_TOKEN_EQNARRAY		: START_EQNARRAY .*? END_EQNARRAY ;

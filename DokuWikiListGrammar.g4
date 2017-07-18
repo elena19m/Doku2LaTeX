@@ -60,8 +60,8 @@ one_line_formatted :
 //			| NOWIKI_TOKEN2						# list_nowiki2
 			| CODE_TOKEN1						# list_code
 			| FILE_TOKEN						# list_file
-			| LATEX_TOKEN_S						# list_latexs
-			| LATEX_TOKEN_SS					# list_latexss
+//			| LATEX_TOKEN_S						# list_latexs
+//			| LATEX_TOKEN_SS					# list_latexss
 			| LATEX_TOKEN_TAG					# list_latextag
 			| LATEX_TOKEN_DISPLAYMATH				# list_latex_displaymath
 			| LATEX_TOKEN_EQNARRAY					# list_latex_eqnarray
@@ -201,8 +201,8 @@ fragment END_MATH : '\\end{' SPACES*? 'math' SPACES*? '}';
 
 
 
-LATEX_TOKEN_S			: '$' .*? '$' ;
-LATEX_TOKEN_SS			: '$$' .*? '$$' ;
+//LATEX_TOKEN_S			: '$' .*? '$' ;
+//LATEX_TOKEN_SS			: '$$' .*? '$$' ;
 LATEX_TOKEN_TAG			: '<latex>' .*? '</latex>' ;
 LATEX_TOKEN_DISPLAYMATH		: START_DISPLAYMATH .*? END_DISPLAYMATH ;
 LATEX_TOKEN_EQNARRAY		: START_EQNARRAY .*? END_EQNARRAY ;

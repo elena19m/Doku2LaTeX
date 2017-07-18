@@ -237,20 +237,20 @@ public class DokuWikiListListener extends DokuWikiListGrammarBaseListener {
 		System.out.println("\\end{verbatim}");
 	}
 	
-	@Override
-	public void enterList_latexs(DokuWikiListGrammarParser.List_latexsContext ctx) {
-		String s = ctx.LATEX_TOKEN_S().toString();
-		System.out.print(s);
-	}
-	
-	@Override
-	public void enterList_latexss(DokuWikiListGrammarParser.List_latexssContext ctx) {
-		/*
-		 * $$ eq $$
-		 */
-		String s = ctx.LATEX_TOKEN_SS().toString();
-		System.out.print(s);
-	}
+//	@Override
+//	public void enterList_latexs(DokuWikiListGrammarParser.List_latexsContext ctx) {
+//		String s = ctx.LATEX_TOKEN_S().toString();
+//		System.out.print(s);
+//	}
+//	
+//	@Override
+//	public void enterList_latexss(DokuWikiListGrammarParser.List_latexssContext ctx) {
+//		/*
+//		 * $$ eq $$
+//		 */
+//		String s = ctx.LATEX_TOKEN_SS().toString();
+//		System.out.print(s);
+//	}
 	
 	@Override
 	public void enterList_latextag(DokuWikiListGrammarParser.List_latextagContext ctx) {
